@@ -3,7 +3,7 @@ FROM debian:stretch
 WORKDIR /
 
 RUN apt update && \
-    apt install \
+    apt install -y --no-install-recommends \
         squashfs-tools \
         xorriso \
         grub-pc-bin \
